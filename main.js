@@ -2,7 +2,7 @@ import {createServer} from "node:http"
 import {GoogleGenAI} from "@google/genai"
 import {readFileSync} from "fs"
 
-const apiKey = "AIzaSyBP41LaMoZgb2VU_3mSkL4zPwNDC0SDrok"
+const apiKey = ""
 
 const gemini = new GoogleGenAI({"apiKey": apiKey})
 const prompt = readFileSync("prompt2.txt").toString()
@@ -34,4 +34,5 @@ const server = createServer((req, res) => {
 
 server.listen(3000, "127.0.0.1", () => {
   console.log("Listening on 127.0.0.1:3000")
+
 })
