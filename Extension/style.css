@@ -1,0 +1,166 @@
+/* General body styling */
+body {
+    background: transparent;
+    font-size: 25px;
+    color: #e3e3e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.dongle-regular {
+  font-family: "Dongle", sans-serif;
+  font-weight: 50;
+  font-style: normal;
+}
+
+/* Card container */
+.card {
+    border: 3px solid #6b6b6b;
+    border-radius: 15px;
+    padding: 18px;
+    width: 320px;
+    height: 400px;
+    box-sizing: border-box;
+    background: #2e3238;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    overflow-y: auto;
+}
+
+/* Title */
+.name {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Bias bar section */
+.bias {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.meow {
+    font-weight: bold;
+}
+
+
+.label {
+    font-weight: bold;
+    margin-right: 8px;
+    white-space: nowrap;
+}
+
+/* Bias bar background */
+.bias-bar {
+    position: relative;
+    flex-grow: 1;
+    height: 20px;
+    border: 2px solid #2e3238;
+    border-radius: 4px;
+    background: linear-gradient(to right, #186dcd, #da3316); /* Blue to red spectrum */
+    overflow: hidden;
+}
+
+/* Bias indicator arrow 
+.indicator {
+    position: absolute;
+    top: -5px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 8px solid white;
+    transition: left 0.4s ease;
+} */
+
+/* 
+hr.border-line {
+    border: 2px solid red; 
+}
+ */
+/* 
+hr{
+    height: 10px;
+}
+ */
+/* Section container */
+.section {
+    margin-bottom: 14px;
+    padding-top: 10px;
+    position: relative;
+}
+
+/* Divider line between sections */
+.section:not(:first-of-type) {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.leaning {
+    font-size: 26;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Placeholder text styling */
+.placeholder-text {
+    font-size: 12px;
+    color: #a0a0a0;
+    font-style: italic;
+    margin-top: 3px;
+    font-family: Arial, sans-serif;
+}
+
+/* Lighter grey for sources placeholder text */
+.sources-placeholder {
+    color: #c5c5c5 !important;
+}
+
+.loader {
+  width: 128px;
+  height: 128px;
+  display: block;
+  margin:15px auto;
+  position: relative;
+  color: #FFF;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after,
+.loader::before {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 50%;
+  left: 50%;
+  transform: scale(0.5) translate(0, 0);
+  background-color: #FFF;
+  border-radius: 50%;
+  animation: animloader 1s infinite ease-in-out;
+}
+.loader::before {
+  background-color: #FF3D00;
+  transform: scale(0.5) translate(-48px, -48px);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+@keyframes animloader {
+    50% {
+      transform: scale(1) translate(-50%, -50%);
+}
+}
+    

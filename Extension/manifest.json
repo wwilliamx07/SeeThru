@@ -1,0 +1,18 @@
+{
+    "name": "Bias Extension",
+    "description": "ooga booga",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "scripting", "tabs"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "48": "icon2.png",
+      "128": "icon1.png"
+    },
+    "host_permissions": [
+      "http://localhost:3000/*",
+      "http://127.0.0.1:3000/*"
+    ]
+}
