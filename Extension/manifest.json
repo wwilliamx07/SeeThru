@@ -1,6 +1,6 @@
 {
-    "name": "Bias Extension",
-    "description": "ooga booga",
+    "name": "SeeThru",
+    "description": "SeeThru bias!",
     "version": "1.0",
     "manifest_version": 3,
     "permissions": ["activeTab", "scripting", "tabs"],
