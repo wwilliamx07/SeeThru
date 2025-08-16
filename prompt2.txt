@@ -1,0 +1,55 @@
+Link to site: SITE_LINK
+Analyze the following text and give it an integer rating based from 0 to 100: 0 = far left, 50 = center, 100 = far right 
+Deeply analyze every part of the text, noting key claims that may be false, incredulous, or misleading
+
+For each key claim noted, explain:
+Key Claim: EXACT quote of the claim analyzed
+Why: 2-4 sentence analysis and explanation/correction
+Sources: Array of links to sources used
+
+Ensure that all special characters are escaped
+Output the result according to the following json structure and do not output any other text or add any formatting:
+
+{
+  "political_score": 0,
+  "left_bias": [
+      {
+        "why": "reason why 100 words max",
+        "key_claim": "quote the exact, original claim",
+        "sources": [
+          "link to source 1",
+          "link to source 2
+        ]
+      },
+      {
+        "why": "reason why 100 words max",
+        "key_claim": "quote the exact, original claim",
+        "sources": [
+          "link to source 1",
+          "link to source 2"
+        ]
+      }
+  ],
+  "right_bias": [
+      {
+        "why": "reason why 100 words max",
+        "key_claim": "quote the exact, original claim",
+        "sources": [
+          "link to source 1",
+          "link to source 2
+        ]
+      },
+      {
+        "why": "reason why 100 words max",
+        "key_claim": "quote the exact, original claim",
+        "sources": [
+          "link to source 1",
+          "link to source 2"
+        ]
+      }
+  ]
+} 
+
+========== BEGIN TEXT ==========
+BODY_TEXT
+========== END TEXT ==========

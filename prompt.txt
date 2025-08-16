@@ -1,0 +1,21 @@
+Link to site: SITE_LINK
+Analyze the following text and give it an integer rating on political bias from 0 to 100: 100 = far right, 0 = far left, 50 = center
+Concisely explain your reasoning for this score within a maximum of 200 words
+Additionally, highlight key claims that are factually incorrect and debunk them using reputable sources, no more than 100 words each
+Ensure that all special characters are escaped
+Output the raw result according to the following json structure and do not output any other text or formatting:
+{
+    "score": integer from 0-100,
+    "why": maximum of 200 words,
+    "fact_check": [
+        ["quoted incorrect claim", "analysis and correction"],
+        ["quoted incorrect claim 2", "analysis and correction"]
+    ],
+    "sources": [
+        "link1",
+        "link2"
+    ]
+}
+========== BEGIN TEXT ==========
+BODY_TEXT
+========== END TEXT ==========
