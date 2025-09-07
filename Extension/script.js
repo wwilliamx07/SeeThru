@@ -22,9 +22,9 @@ function generateSources(sources) {
 function generateInner(element) {
     return `<div class="section">
                 <span class="label">Key Claim:</span>
-                <div class="placeholder-text">${element.why}</div>
-                <span class="label">Why?</span>
                 <div class="placeholder-text">${element.key_claim}</div>
+                <span class="label">Why?</span>
+                <div class="placeholder-text">${element.why}</div>
                 <span class="label">Sources:</span>
                 ${generateSources(element.sources)}
             </div>`
